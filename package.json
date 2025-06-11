@@ -4,11 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start . --attach --name levanter",
-    "docker": "pm2-runtime start . --name levanter",
-    "stop": "pm2 stop levanter",
-    "postinstall": "node -e \"try { require('sharp') } catch (e) { process.exit(1); }\" || yarn add --ignore-engines sharp@0.33.5"
-  },
+    "start": "node index.js"
+  }
   "author": "",
   "license": "MIT",
   "dependencies": {
